@@ -11,7 +11,6 @@
 		699976952072E462001BA238 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699976942072E462001BA238 /* Item.swift */; };
 		699976972072E491001BA238 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699976962072E491001BA238 /* ItemCell.swift */; };
 		699976992072E6DB001BA238 /* SpecificCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699976982072E6DB001BA238 /* SpecificCategoryVC.swift */; };
-		6999769B2072F32C001BA238 /* CategoryGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999769A2072F32C001BA238 /* CategoryGear.swift */; };
 		6999769D2072FAA7001BA238 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999769C2072FAA7001BA238 /* ButtonView.swift */; };
 		B510EA5B2072BD45006C4FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510EA5A2072BD45006C4FF2 /* AppDelegate.swift */; };
 		B510EA5D2072BD45006C4FF2 /* AllCategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510EA5C2072BD45006C4FF2 /* AllCategoriesVC.swift */; };
@@ -28,7 +27,6 @@
 		699976942072E462001BA238 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		699976962072E491001BA238 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		699976982072E6DB001BA238 /* SpecificCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificCategoryVC.swift; sourceTree = "<group>"; };
-		6999769A2072F32C001BA238 /* CategoryGear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGear.swift; sourceTree = "<group>"; };
 		6999769C2072FAA7001BA238 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B510EA572072BD45006C4FF2 /* TRAILguide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRAILguide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B510EA5A2072BD45006C4FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 			children = (
 				B510EA712072BFCE006C4FF2 /* Category.swift */,
 				699976942072E462001BA238 /* Item.swift */,
-				6999769A2072F32C001BA238 /* CategoryGear.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,7 +194,6 @@
 				B510EA5D2072BD45006C4FF2 /* AllCategoriesVC.swift in Sources */,
 				B510EA5B2072BD45006C4FF2 /* AppDelegate.swift in Sources */,
 				699976992072E6DB001BA238 /* SpecificCategoryVC.swift in Sources */,
-				6999769B2072F32C001BA238 /* CategoryGear.swift in Sources */,
 				699976972072E491001BA238 /* ItemCell.swift in Sources */,
 				699976912072DE96001BA238 /* AppInfoVC.swift in Sources */,
 				6999769D2072FAA7001BA238 /* ButtonView.swift in Sources */,

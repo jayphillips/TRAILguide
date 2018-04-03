@@ -12,10 +12,12 @@ class SpecificCategoryVC: UIViewController, UICollectionViewDataSource, UICollec
     
     @IBOutlet weak var itemsCollection: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     private(set) public var items = [Item]()
     
-    var categoryGearTitle = [CategoryGear]()
+    var categoryGearTitle: String?
+    var categoryBackgroundImage: String?
 
     
   
@@ -27,6 +29,7 @@ class SpecificCategoryVC: UIViewController, UICollectionViewDataSource, UICollec
         itemsCollection.delegate = self
         
         titleLabel.text = categoryGearTitle
+        backgroundImage.image = UIImage(named: categoryBackgroundImage!)
     
 
         }

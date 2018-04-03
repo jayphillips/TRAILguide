@@ -311,6 +311,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="i3H-6f-d92" id="ZLX-Fy-oec"/>
                         <outlet property="itemsCollection" destination="nNg-B7-1t8" id="unn-nh-Jix"/>
                         <outlet property="titleLabel" destination="rWe-U5-ubI" id="upD-hJ-bbS"/>
                     </connections>

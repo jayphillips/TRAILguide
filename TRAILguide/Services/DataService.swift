@@ -13,26 +13,14 @@ class DataService {
     
     // Define Categories
     private let categories = [
-    Category(title: "BACKPACKING", imageName: "backpackingBG.png"),
-    Category(title: "CAMPING", imageName: "campingBG.png"),
-    Category(title: "DIVING", imageName: "divingBG.png"),
-    Category(title: "FISHING", imageName: "fishingBG.png"),
-    Category(title: "HIKING", imageName: "hikingBG.png")
+        Category(title: "BACKPACKING", imageName: "backpackingBG.png", bgTitle: "BACKPACKING GEAR"),
+        Category(title: "CAMPING", imageName: "campingBG.png", bgTitle: "CAMPING GEAR"),
+        Category(title: "DIVING", imageName: "divingBG.png", bgTitle: "DIVING GEAR"),
+        Category(title: "FISHING", imageName: "fishingBG.png", bgTitle: "FISHING GEAR"),
+        Category(title: "HIKING", imageName: "hikingBG.png", bgTitle: "HIKING GEAR")
     ]
     func getCategories() -> [Category] {
         return categories
-    }
-    
-    // Define Category Gear
-    private let categoryGear = [
-        CategoryGear(title: "BACKPACKING GEAR"),
-        CategoryGear(title: "CAMPING GEAR"),
-        CategoryGear(title: "DIVING GEAR"),
-        CategoryGear(title: "FISHING GEAR"),
-        CategoryGear(title: "HIKING GEAR")
-    ]
-    func getCategoryGear(forCategoryTitle title: String) -> [CategoryGear] {
-        return categoryGear
     }
     
     // Define Items
