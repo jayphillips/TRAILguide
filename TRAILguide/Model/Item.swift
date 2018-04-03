@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  Item.swift
 //  TRAILguide
 //
 //  Created by Jay Phillips on 4/2/18.
@@ -8,14 +8,10 @@
 
 import Foundation
 
-struct Category {
-    private(set) public var title: String
+struct Item {
     private(set) public var imageName: String
     
-    init(title: String, imageName: String) {
-        self.title = title
+    init(imageName: String) {
         self.imageName = imageName
     }
 }
-
-
