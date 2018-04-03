@@ -15,6 +15,7 @@ class SpecificCategoryVC: UIViewController, UICollectionViewDataSource, UICollec
     
     private(set) public var items = [Item]()
     
+    var categoryGearTitle = [CategoryGear]()
 
     
   
@@ -24,6 +25,8 @@ class SpecificCategoryVC: UIViewController, UICollectionViewDataSource, UICollec
 
         itemsCollection.dataSource = self
         itemsCollection.delegate = self
+        
+        titleLabel.text = categoryGearTitle
     
 
         }

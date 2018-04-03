@@ -45,7 +45,7 @@ class AllCategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         if let specificCategoryVC = segue.destination as? SpecificCategoryVC {
             assert(sender as? Category != nil)
             specificCategoryVC.initItems(category: sender as! Category)
-            
+            specificCategoryVC.categoryGearTitle = (sender as! CategoryGear).title
         }
     }
     
