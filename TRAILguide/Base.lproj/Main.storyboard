@@ -314,11 +314,139 @@
                         <outlet property="backgroundImage" destination="i3H-6f-d92" id="ZLX-Fy-oec"/>
                         <outlet property="itemsCollection" destination="nNg-B7-1t8" id="unn-nh-Jix"/>
                         <outlet property="titleLabel" destination="rWe-U5-ubI" id="upD-hJ-bbS"/>
+                        <segue destination="PIE-0o-PPp" kind="show" identifier="toDetailVC" id="fnr-0p-ZXn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="581-QD-aQr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="744.79999999999995" y="31.934032983508249"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="wu6-1P-T3A">
+            <objects>
+                <viewController id="PIE-0o-PPp" customClass="DetailVC" customModule="TRAILguide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vmd-FV-SYr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Umc-xc-OI0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0MX-Ae-4Af">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lc-y4-ucW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAILguide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue2-Wg-k2o">
+                                        <rect key="frame" x="119" y="17" width="136" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coj-qD-lPx">
+                                        <rect key="frame" x="10" y="21" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Obr-ce-zOn"/>
+                                            <constraint firstAttribute="width" constant="22" id="rwz-vy-d0A"/>
+                                        </constraints>
+                                        <state key="normal" image="backBtn"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="ezU-FB-tGH" eventType="touchUpInside" id="jAD-ss-ZDd"/>
+                                            <segue destination="Hhm-k9-xfs" kind="unwind" unwindAction="unwindFromDetailVCWithUnwindSegue:" id="LgW-Ch-Sxs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="5lA-6c-jRh"/>
+                                    <constraint firstItem="coj-qD-lPx" firstAttribute="centerY" secondItem="5lc-y4-ucW" secondAttribute="centerY" id="9Sa-On-4ef"/>
+                                    <constraint firstItem="ue2-Wg-k2o" firstAttribute="centerY" secondItem="5lc-y4-ucW" secondAttribute="centerY" id="Peo-nA-4Yq"/>
+                                    <constraint firstItem="coj-qD-lPx" firstAttribute="leading" secondItem="5lc-y4-ucW" secondAttribute="leading" constant="10" id="QGN-Et-tje"/>
+                                    <constraint firstItem="ue2-Wg-k2o" firstAttribute="centerX" secondItem="5lc-y4-ucW" secondAttribute="centerX" id="qug-t7-Csm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNS-2X-k7F">
+                                <rect key="frame" x="0.0" y="85" width="375" height="150"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sleepingBag" translatesAutoresizingMaskIntoConstraints="NO" id="LfP-qM-tGf">
+                                        <rect key="frame" x="112" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Xet-CU-oTE"/>
+                                            <constraint firstAttribute="height" constant="150" id="ug6-0d-DEe"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2QX-oq-3fW"/>
+                                    <constraint firstItem="LfP-qM-tGf" firstAttribute="centerX" secondItem="ZNS-2X-k7F" secondAttribute="centerX" id="8ax-Vc-SWH"/>
+                                    <constraint firstItem="LfP-qM-tGf" firstAttribute="centerY" secondItem="ZNS-2X-k7F" secondAttribute="centerY" id="XlD-Ni-UUe"/>
+                                    <constraint firstItem="LfP-qM-tGf" firstAttribute="top" secondItem="ZNS-2X-k7F" secondAttribute="top" id="db5-Jl-bAn"/>
+                                    <constraint firstAttribute="bottom" secondItem="LfP-qM-tGf" secondAttribute="bottom" id="lBZ-JI-RL0"/>
+                                    <constraint firstItem="LfP-qM-tGf" firstAttribute="centerX" secondItem="ZNS-2X-k7F" secondAttribute="centerX" id="zIP-io-wkL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vv-Jj-2v5">
+                                <rect key="frame" x="0.0" y="235" width="375" height="432"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="campingBG" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-SO-Pke">
+                                        <rect key="frame" x="2" y="0.0" width="373" height="432"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-U7-ycJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sleeping Bag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LW-nk-zaH">
+                                        <rect key="frame" x="27" y="23" width="324" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yB-SO-2b0">
+                                        <rect key="frame" x="35" y="93" width="311" height="311"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">A sleeping bag is a camping essential. It provides a warm and semi-comfortable place to sleep when camping. Some sleeping bags are rated for temperatures below 0 degrees F! 
+
+We recommend the SnugSleeper SubZero bag for camping anywhere you think you might be cold.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UDy-U7-ycJ" secondAttribute="bottom" id="Kdr-OG-pcs"/>
+                                    <constraint firstItem="UDy-U7-ycJ" firstAttribute="leading" secondItem="2vv-Jj-2v5" secondAttribute="leading" id="cah-6l-5qD"/>
+                                    <constraint firstItem="UDy-U7-ycJ" firstAttribute="top" secondItem="2vv-Jj-2v5" secondAttribute="top" id="dBl-tL-suG"/>
+                                    <constraint firstAttribute="trailing" secondItem="UDy-U7-ycJ" secondAttribute="trailing" id="y59-ob-LIi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5lc-y4-ucW" secondAttribute="trailing" id="4da-Kb-2Ya"/>
+                            <constraint firstItem="ZNS-2X-k7F" firstAttribute="leading" secondItem="0MX-Ae-4Af" secondAttribute="leading" id="5rf-Fu-0y1"/>
+                            <constraint firstItem="ZNS-2X-k7F" firstAttribute="top" secondItem="5lc-y4-ucW" secondAttribute="bottom" id="CtU-Ft-NJC"/>
+                            <constraint firstItem="5lc-y4-ucW" firstAttribute="leading" secondItem="0MX-Ae-4Af" secondAttribute="leading" id="NPn-1U-Rcq"/>
+                            <constraint firstItem="2vv-Jj-2v5" firstAttribute="top" secondItem="ZNS-2X-k7F" secondAttribute="bottom" id="S4n-aC-F1p"/>
+                            <constraint firstItem="2vv-Jj-2v5" firstAttribute="leading" secondItem="0MX-Ae-4Af" secondAttribute="leading" id="VNo-qT-2Xo"/>
+                            <constraint firstItem="5lc-y4-ucW" firstAttribute="top" secondItem="vmd-FV-SYr" secondAttribute="bottom" id="Y56-7r-H8I"/>
+                            <constraint firstAttribute="trailing" secondItem="2vv-Jj-2v5" secondAttribute="trailing" id="Ymu-Xz-MUX"/>
+                            <constraint firstAttribute="trailing" secondItem="ZNS-2X-k7F" secondAttribute="trailing" id="mlD-d0-bP8"/>
+                            <constraint firstItem="Umc-xc-OI0" firstAttribute="top" secondItem="2vv-Jj-2v5" secondAttribute="bottom" id="y3I-l7-spx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailCategoryDescription" destination="3yB-SO-2b0" id="7Tf-oQ-2iM"/>
+                        <outlet property="detailCategoryImage" destination="LfP-qM-tGf" id="a1W-Fy-5Qn"/>
+                        <outlet property="detailCategoryTitle" destination="1LW-nk-zaH" id="Mjr-iw-zlk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Asy-T1-hl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Hhm-k9-xfs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="32"/>
         </scene>
     </scenes>
     <resources>

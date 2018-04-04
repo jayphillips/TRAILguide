@@ -13,8 +13,7 @@ class AppInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-    }
+        }
 
     @IBAction func backBtnPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

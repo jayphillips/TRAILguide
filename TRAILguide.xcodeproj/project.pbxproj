@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6933827D2074493900620EFD /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6933827C2074493900620EFD /* DetailVC.swift */; };
+		6933827F20744BE200620EFD /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6933827E20744BE200620EFD /* CategoryItem.swift */; };
 		699976912072DE96001BA238 /* AppInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699976902072DE96001BA238 /* AppInfoVC.swift */; };
 		699976952072E462001BA238 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699976942072E462001BA238 /* Item.swift */; };
 		699976972072E491001BA238 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699976962072E491001BA238 /* ItemCell.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6933827C2074493900620EFD /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		6933827E20744BE200620EFD /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		699976902072DE96001BA238 /* AppInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoVC.swift; sourceTree = "<group>"; };
 		699976942072E462001BA238 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		699976962072E491001BA238 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 				B510EA5C2072BD45006C4FF2 /* AllCategoriesVC.swift */,
 				699976902072DE96001BA238 /* AppInfoVC.swift */,
 				699976982072E6DB001BA238 /* SpecificCategoryVC.swift */,
+				6933827C2074493900620EFD /* DetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			children = (
 				B510EA712072BFCE006C4FF2 /* Category.swift */,
 				699976942072E462001BA238 /* Item.swift */,
+				6933827E20744BE200620EFD /* CategoryItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			files = (
 				B510EA5D2072BD45006C4FF2 /* AllCategoriesVC.swift in Sources */,
 				B510EA5B2072BD45006C4FF2 /* AppDelegate.swift in Sources */,
+				6933827D2074493900620EFD /* DetailVC.swift in Sources */,
 				699976992072E6DB001BA238 /* SpecificCategoryVC.swift in Sources */,
 				699976972072E491001BA238 /* ItemCell.swift in Sources */,
 				699976912072DE96001BA238 /* AppInfoVC.swift in Sources */,
@@ -200,6 +207,7 @@
 				B510EA702072BFB9006C4FF2 /* CategoryCell.swift in Sources */,
 				699976952072E462001BA238 /* Item.swift in Sources */,
 				B510EA722072BFCE006C4FF2 /* Category.swift in Sources */,
+				6933827F20744BE200620EFD /* CategoryItem.swift in Sources */,
 				B510EA752072C275006C4FF2 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

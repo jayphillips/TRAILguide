@@ -12,7 +12,6 @@ class AllCategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSou
     
     @IBOutlet weak var categoryTable: UITableView!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

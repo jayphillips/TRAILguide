@@ -53,8 +53,28 @@ class SpecificCategoryVC: UIViewController, UICollectionViewDataSource, UICollec
         return ItemCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = DataService.instance.getCategoryItems()[indexPath.row]
+        performSegue(withIdentifier: "toDetailVC", sender: item)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailVC = segue.destination as? DetailVC {
+            assert(sender as? CategoryItem != nil)
+            detailVC.initCategoryItems()
+            detailVC.detailCategoryLabelTitle = (sender as! CategoryItem).title
+            detailVC.detailCategoryBGImage = (sender as! CategoryItem).imageName
+            detailVC.detailDescription = (sender as! CategoryItem).description
+        }
+    }
+    
+    
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func unwindFromDetailVC(unwindSegue: UIStoryboardSegue) {
+        
     }
     
 }
