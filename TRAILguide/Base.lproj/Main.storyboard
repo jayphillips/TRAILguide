@@ -388,9 +388,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vv-Jj-2v5">
                                 <rect key="frame" x="0.0" y="235" width="375" height="432"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="campingBG" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-SO-Pke">
-                                        <rect key="frame" x="2" y="0.0" width="373" height="432"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campingBG" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-SO-Pke">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
                                     </imageView>
                                     <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-U7-ycJ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
@@ -416,9 +415,13 @@ We recommend the SnugSleeper SubZero bag for camping anywhere you think you migh
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="rFY-SO-Pke" firstAttribute="leading" secondItem="2vv-Jj-2v5" secondAttribute="leading" id="8kM-oR-ZBU"/>
                                     <constraint firstAttribute="bottom" secondItem="UDy-U7-ycJ" secondAttribute="bottom" id="Kdr-OG-pcs"/>
+                                    <constraint firstAttribute="bottom" secondItem="rFY-SO-Pke" secondAttribute="bottom" id="RNm-Dx-uBX"/>
                                     <constraint firstItem="UDy-U7-ycJ" firstAttribute="leading" secondItem="2vv-Jj-2v5" secondAttribute="leading" id="cah-6l-5qD"/>
                                     <constraint firstItem="UDy-U7-ycJ" firstAttribute="top" secondItem="2vv-Jj-2v5" secondAttribute="top" id="dBl-tL-suG"/>
+                                    <constraint firstItem="rFY-SO-Pke" firstAttribute="top" secondItem="2vv-Jj-2v5" secondAttribute="top" id="qoc-mT-XfD"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFY-SO-Pke" secondAttribute="trailing" id="wGA-3v-hiL"/>
                                     <constraint firstAttribute="trailing" secondItem="UDy-U7-ycJ" secondAttribute="trailing" id="y59-ob-LIi"/>
                                 </constraints>
                             </view>
